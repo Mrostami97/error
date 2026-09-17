@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a focused improvement to extraction, validation, or developer experience
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What concrete workflow or document pattern is currently unsupported?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the smallest useful behavior and expected output.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Synthetic example
+      description: Provide a non-sensitive example if it helps explain the request.
+    validations:
+      required: false
