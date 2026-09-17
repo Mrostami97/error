@@ -1,0 +1,5 @@
+1. Which structure is FIFO?
+A. Stack
+B. Queue
+C. Tree
+D. Graph
