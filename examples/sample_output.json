@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "source_file": "sample_input.txt",
+  "question_count": 1,
+  "questions": [
+    {
+      "number": 1,
+      "text": "Which structure is FIFO?",
+      "options": ["Stack", "Queue", "Tree", "Graph"],
+      "page": null,
+      "raw": "1. Which structure is FIFO?\nA. Stack\nB. Queue\nC. Tree\nD. Graph"
+    }
+  ]
+}
