@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Mrostami97/exam-pdf-question-extractor/blob/main/schema/question-extraction-v1.schema.json",
+  "title": "Exam PDF Question Extraction Document v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "source_file", "question_count", "questions"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "source_file": {"type": "string", "minLength": 1},
+    "question_count": {"type": "integer", "minimum": 0},
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["number", "text", "options", "page", "raw"],
+        "properties": {
+          "number": {"type": "integer", "minimum": 1},
+          "text": {"type": "string"},
+          "options": {"type": "array", "items": {"type": "string"}},
+          "page": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+          "raw": {"type": "string"}
+        }
+      }
+    }
+  }
+}
