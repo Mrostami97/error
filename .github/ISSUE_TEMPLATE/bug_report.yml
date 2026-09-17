@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible extraction, CLI, or schema problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use synthetic/minimal examples when possible. Do not upload copyrighted PDFs, secrets, or sensitive personal data.
+  - type: textarea
+    id: input
+    attributes:
+      label: Minimal input
+      description: Paste the smallest non-sensitive text sample or describe the PDF characteristics.
+      placeholder: "1. Example question?\nA. First\nB. Second"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.13"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Project version or commit
+      placeholder: "0.1.0 or commit SHA"
+    validations:
+      required: true
